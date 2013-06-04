@@ -2,8 +2,8 @@ package uk.co.blockbusters;
 
 import org.junit.*;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import static org.junit.Assert.*;
@@ -24,15 +24,57 @@ public class CustomerTest {
     private Rental dumboFourDays = new Rental(dumbo, 4);
     private Rental dumboFiveDays = new Rental(dumbo, 5);
 
-    private Map<String, Object> rentals;
+    private Map<String, HashMap<String, Object>> rentals;
+    private HashMap<String, HashMap<String, Object>> godfatherOneDayRental;
+    private HashMap<String, HashMap<String, Object>> godfatherThreeDayRental;
+    private HashMap<String,HashMap<String,Object>> godfatherFourDayRental;
+
+    private HashMap<String, HashMap<String, Object>> dumboOneDayRental;
+    private HashMap<String, HashMap<String, Object>> dumboFourDayRental;
+    private HashMap<String, HashMap<String, Object>> dumboFiveDayRental;
+
+    private HashMap<String,HashMap<String,Object>> twoFilmRentals;
 
     @Before
     public void setup() {
         theDon = new Customer("Don Corleone");
-        rentals = new HashMap<String, Object>();
 
-        rentals.put("title", godfather.getTitle());
-        rentals.put("rentalCost", 3.5);
+        godfatherOneDayRental = singleRental(godfather, 2);
+        godfatherThreeDayRental = singleRental(godfather, 3.5);
+        godfatherFourDayRental = singleRental(godfather, 5);
+
+        dumboOneDayRental = singleRental(dumbo, 1.5);
+        dumboFourDayRental = singleRental(dumbo, 3);
+        dumboFiveDayRental = singleRental(dumbo, 4.5);
+
+        twoFilmRentals = new HashMap<String, HashMap<String, Object>>() {
+            {
+                put("Godfather",
+                    new HashMap<String, Object>() {{
+                        put("movie", godfather);
+                        put("cost", 2.0);
+                    }});
+                put("Dumbo",
+                    new HashMap<String, Object>() {{
+                        put("movie", dumbo);
+                        put("cost", 1.5);
+                    }});
+            }
+        };
+    }
+
+    private HashMap<String, HashMap<String, Object>> singleRental(
+            final Movie movie, final double cost) {
+        return new HashMap<String, HashMap<String, Object>>() {
+            {
+                put(movie.getTitle(),
+                    new HashMap<String, Object>() {{
+                        put("movie", movie);
+                        put("cost", cost);
+                    }}
+                );
+            }
+        };
     }
 
     @Test
@@ -40,10 +82,8 @@ public class CustomerTest {
         theDon.addRental(godfatherOneDay);
         int renterPoints = 1;
         double totalAmount = 2;
-        double costOfMovieRental = 2;
 
-        assertStatementContains(
-                godfather, renterPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(godfatherOneDayRental, renterPoints, totalAmount);
     }
 
     @Test
@@ -51,10 +91,8 @@ public class CustomerTest {
         theDon.addRental(godfatherThreeDays);
         int renterPoints = 1;
         double totalAmount = 3.5;
-        double costOfMovieRental = 3.5;
 
-        assertStatementContains(
-                godfather, renterPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(godfatherThreeDayRental, renterPoints, totalAmount);
     }
 
     @Test
@@ -62,10 +100,8 @@ public class CustomerTest {
         theDon.addRental(godfatherFourDays);
         int renterPoints = 1;
         double totalAmount = 5;
-        double costOfMovieRental = 5;
 
-        assertStatementContains(
-                godfather, renterPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(godfatherFourDayRental, renterPoints, totalAmount);
     }
 
     @Test
@@ -73,10 +109,8 @@ public class CustomerTest {
         theDon.addRental(dumboOneDay);
         int renterPoints = 1;
         double totalAmount = 1.5;
-        double costOfMovieRental = 1.5;
 
-        assertStatementContains(
-                dumbo, renterPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(dumboOneDayRental, renterPoints, totalAmount);
     }
 
     @Test
@@ -84,51 +118,53 @@ public class CustomerTest {
         theDon.addRental(dumboFourDays);
         int renterPoints = 1;
         double totalAmount = 3;
-        double costOfMovieRental = 3;
 
-        assertStatementContains(
-                dumbo, renterPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(dumboFourDayRental, renterPoints, totalAmount);
     }
 
     @Test
     public void checkStatementForChildrensMovieForFiveDays() {
         theDon.addRental(dumboFiveDays);
-        int renderPoints = 1;
+        int renterPoints = 1;
         double totalAmount = 4.5;
-        double costOfMovieRental = 4.5;
 
-        assertStatementContains(
-                dumbo, renderPoints, totalAmount, costOfMovieRental);
+        assertStatementContains(dumboFiveDayRental, renterPoints, totalAmount);
     }
 
     @Test
     public void checkStatementIncreasesRenterPointsIfTwoFilmsAreRented() {
         theDon.addRental(godfatherOneDay);
-
-
-
         theDon.addRental(dumboOneDay);
         int renterPoints = 2;
         double totalAmount = 3.5;
-        double costOfMovieRental = 3.5;
 
-        assertStatementContains()
+        assertStatementContains(twoFilmRentals, renterPoints, totalAmount);
     }
 
-    private void assertStatementContains(Movie movie, int expectedRenterPoints, double totalAmount, double costOfMovieRental) {
-        String expectedStatement = buildStatement(theDon, movie,
-                totalAmount, expectedRenterPoints, costOfMovieRental);
+    private void assertStatementContains(
+        Map<String, HashMap<String, Object>> rentals,
+        int expectedRenterPoints, double totalAmount) {
+        String expectedStatement = buildStatement(
+                theDon, rentals, totalAmount, expectedRenterPoints);
         String statement = theDon.statement();
         assertEquals(expectedStatement, statement);
     }
 
     private String buildStatement(
-            Customer customer, Movie movie,
-            double totalAmount, int frequentRenterPoints,
-            double costOfMovieRental) {
-        return "Rental Record for " + customer.getName() + "\n" +
-                "\t" + movie.getTitle() + "\t" + costOfMovieRental + "\n" +
-                "Amount owed is " + totalAmount + "\n" +
+            Customer customer, Map<String, HashMap<String, Object>> rentals,
+            double totalAmount, int frequentRenterPoints) {
+        String statement = "Rental Record for " + customer.getName() + "\n";
+
+        Iterator it = rentals.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pairs = (Map.Entry) it.next();
+            HashMap<String, Object> rental = (HashMap<String, Object>) pairs.getValue();
+            statement += "\t" + ((Movie) rental.get("movie")).getTitle() + "\t" + rental.get("cost") + "\n";
+            it.remove();
+        }
+
+        statement += "Amount owed is " + totalAmount + "\n" +
                 "You earned " + frequentRenterPoints + " frequent renter points";
+        return statement;
     }
 }
