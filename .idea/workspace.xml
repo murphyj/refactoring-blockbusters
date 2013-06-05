@@ -13,7 +13,7 @@
     <file path="/CustomerTest.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370466753067" ignored="false" />
     <file path="/a.dummy" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370290009932" ignored="false" />
     <file path="/fragment.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370288255109" ignored="false" />
-    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370467402664" ignored="false" />
+    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370467475156" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -631,7 +631,11 @@
       <created>1370467422474</created>
       <updated>1370467422474</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added additional test for Customer">
+      <created>1370467480589</created>
+      <updated>1370467480589</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
