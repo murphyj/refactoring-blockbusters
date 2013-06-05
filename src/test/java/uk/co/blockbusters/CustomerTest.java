@@ -24,6 +24,10 @@ public class CustomerTest {
     private Rental dumboFourDays = new Rental(dumbo, 4);
     private Rental dumboFiveDays = new Rental(dumbo, 5);
 
+    private Movie starTrek = new Movie("Star Trek", Movie.NEW_RELEASE);
+
+    private Rental starTrekTwoDays = new Rental(starTrek, 2);
+
     private Map<String, HashMap<String, Object>> rentals;
     private HashMap<String, HashMap<String, Object>> godfatherOneDayRental;
     private HashMap<String, HashMap<String, Object>> godfatherThreeDayRental;
@@ -33,7 +37,9 @@ public class CustomerTest {
     private HashMap<String, HashMap<String, Object>> dumboFourDayRental;
     private HashMap<String, HashMap<String, Object>> dumboFiveDayRental;
 
-    private HashMap<String,HashMap<String,Object>> twoFilmRentals;
+    private HashMap<String, HashMap<String,Object>> twoFilmRentals;
+
+    private HashMap<String, HashMap<String, Object>> newReleaseRental;
 
     @Before
     public void setup() {
@@ -46,6 +52,8 @@ public class CustomerTest {
         dumboOneDayRental = singleRental(dumbo, 1.5);
         dumboFourDayRental = singleRental(dumbo, 3);
         dumboFiveDayRental = singleRental(dumbo, 4.5);
+
+        newReleaseRental = singleRental(starTrek, 8);
 
         twoFilmRentals = new HashMap<String, HashMap<String, Object>>() {
             {
@@ -139,6 +147,14 @@ public class CustomerTest {
         double totalAmount = 3.5;
 
         assertStatementContains(twoFilmRentals, renterPoints, totalAmount);
+    }
+
+    @Test
+    public void checkStatementIncreasesRenterPointsForTwoDayNewReleaseRental() {
+        theDon.addRental(starTrekTwoDays);
+        int renterPoints = 2;
+        double totalAmount = 8.0;
+        assertStatementContains(newReleaseRental, renterPoints, totalAmount);
     }
 
     private void assertStatementContains(
