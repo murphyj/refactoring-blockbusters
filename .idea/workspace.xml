@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a648215a-1f5a-44c4-9aff-0c991cc13865" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Movie.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="videostore.iws" />
@@ -15,7 +13,7 @@
     <file path="/CustomerTest.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370466753067" ignored="false" />
     <file path="/a.dummy" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370290009932" ignored="false" />
     <file path="/fragment.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370288255109" ignored="false" />
-    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370464932382" ignored="false" />
+    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370467402664" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -629,7 +627,11 @@
       <created>1370380396526</created>
       <updated>1370380396526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added additional test for Customer">
+      <created>1370467422474</created>
+      <updated>1370467422474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,7 +702,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored tests so that they accept multiple rentals for assertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional test for Customer" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -715,6 +717,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Refactored tests so that they accept multiple rentals for assertion" />
+    <MESSAGE value="Added additional test for Customer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
