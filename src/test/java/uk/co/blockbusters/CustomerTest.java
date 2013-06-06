@@ -53,7 +53,7 @@ public class CustomerTest {
         dumboFourDayRental = singleRental(dumbo, 3);
         dumboFiveDayRental = singleRental(dumbo, 4.5);
 
-        newReleaseRental = singleRental(starTrek, 8);
+        newReleaseRental = singleRental(starTrek, 6);
 
         twoFilmRentals = new HashMap<String, HashMap<String, Object>>() {
             {
@@ -153,7 +153,7 @@ public class CustomerTest {
     public void checkStatementIncreasesRenterPointsForTwoDayNewReleaseRental() {
         theDon.addRental(starTrekTwoDays);
         int renterPoints = 2;
-        double totalAmount = 8.0;
+        double totalAmount = 6.0;
         assertStatementContains(newReleaseRental, renterPoints, totalAmount);
     }
 
