@@ -1,30 +1,35 @@
 package uk.co.blockbusters;
 
-import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
+import uk.co.blockbusters.movie.ChildrenMovie;
+import uk.co.blockbusters.movie.Movie;
+import uk.co.blockbusters.movie.NewReleaseMovie;
+import uk.co.blockbusters.movie.RegularMovie;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
 
     private Customer theDon;
 
-    private Movie godfather = new Movie("Godfather", Movie.REGULAR);
+    private Movie godfather = new RegularMovie("Godfather: Part One");
 
     private Rental godfatherOneDay = new Rental(godfather, 1);
     private Rental godfatherThreeDays = new Rental(godfather, 3);
     private Rental godfatherFourDays = new Rental(godfather, 4);
 
-    private Movie dumbo = new Movie("Dumbo", Movie.CHILDRENS);
+    private Movie dumbo = new ChildrenMovie("Dumbo");
 
     private Rental dumboOneDay = new Rental(dumbo, 1);
     private Rental dumboFourDays = new Rental(dumbo, 4);
     private Rental dumboFiveDays = new Rental(dumbo, 5);
 
-    private Movie starTrek = new Movie("Star Trek", Movie.NEW_RELEASE);
+    private Movie starTrek = new NewReleaseMovie("Star Trek: Into the Darkness");
 
     private Rental starTrekTwoDays = new Rental(starTrek, 2);
 
@@ -57,7 +62,7 @@ public class CustomerTest {
 
         twoFilmRentals = new HashMap<String, HashMap<String, Object>>() {
             {
-                put("Godfather",
+                put("Godfather: Part One",
                     new HashMap<String, Object>() {{
                         put("movie", godfather);
                         put("cost", 2.0);

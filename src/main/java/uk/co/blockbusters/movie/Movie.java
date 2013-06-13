@@ -1,26 +1,14 @@
 package uk.co.blockbusters.movie;
 
-public class Movie {
-
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
+public abstract class Movie {
 
     private String title;
-    private int priceCode;
 
-    public Movie (String title, int priceCode) {
+    public Movie (String title) {
         this.title = title;
-        this.priceCode = priceCode;
     }
 
-    public int getPriceCode() {
-        return this.priceCode;
-    }
-
-    public void setPriceCode(int priceCode) {
-        this.priceCode = priceCode;
-    }
+    public abstract double getPriceCode();
 
     public String getTitle() {
         return title;

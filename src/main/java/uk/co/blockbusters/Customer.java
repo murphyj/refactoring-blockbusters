@@ -1,5 +1,7 @@
 package uk.co.blockbusters;
 
+import uk.co.blockbusters.movie.Movie;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 

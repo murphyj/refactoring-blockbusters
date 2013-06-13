@@ -1,5 +1,7 @@
 package uk.co.blockbusters;
 
+import uk.co.blockbusters.movie.Movie;
+
 public class Rental {
 
     private Movie movie;
@@ -20,6 +22,10 @@ public class Rental {
 
     public double getCharge() {
         double rentalPrice = 0;
+        rentalPrice += getMovie().getInitialPriceCode();
+        if (getDaysRented() > getMovie().getInitialDaysRentalLimit()) {
+            rentalPrice += (getDaysRented() - getMovie().getInitialDaysRentalLimit()) * getMovie()
+        }
         switch (getMovie().getPriceCode()) {
             case Movie.REGULAR:
                 rentalPrice += 2;
@@ -28,7 +34,10 @@ public class Rental {
                 }
                 break;
             case Movie.NEW_RELEASE:
-                rentalPrice += getDaysRented() * 3;
+                rentalPrice += 0;
+                if (getDaysRented() > 0) {
+                    rentalPrice += (getDaysRented() - 0) * 3;
+                }
                 break;
             case Movie.CHILDRENS:
                 rentalPrice += 1.5;
