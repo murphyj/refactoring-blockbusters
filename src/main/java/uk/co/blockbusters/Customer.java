@@ -23,8 +23,6 @@ public class Customer {
     }
 
     public String statement() {
-        double totalCost = 0;
-        int frequentRenterPoints = 0;
         Iterator<Rental> rentals = this.rentals.iterator();
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasNext()) {
@@ -33,28 +31,36 @@ public class Customer {
 
             rentalCost = rental.getCharge();
 
-            // add frequent renter points
-            frequentRenterPoints += rental.getFrequentRenterPoints();
-
             //show figures for this rental
             result += "\t" + rental.getMovie().getTitle() + "\t" +
                     String.valueOf(rentalCost) + "\n";
-            totalCost += rentalCost;
         }
 
         // add footer lines
-        result += "Amount owed is " + String.valueOf(totalCost) + "\n";
-        result += "You earned " + String.valueOf(frequentRenterPoints) +
+        result += "Amount owed is " + String.valueOf(getTotalCost()) + "\n";
+        result += "You earned " + String.valueOf(getTotalFrequentRenterPoints()) +
                 " frequent renter points";
         return result;
     }
 
-    private int getFrequentRenterPoints(int frequentRenterPoints, Rental rental) {
-        if ((rental.getMovie() instanceof NewReleaseMovie) &&
-             rental.getDaysRented() > 1) {
-            frequentRenterPoints ++;
+    private int getTotalFrequentRenterPoints() {
+        int totalFrequentRenterPoints = 0;
+        Iterator<Rental> iterator = rentals.iterator();
+        while(iterator.hasNext()) {
+            Rental rental = iterator.next();
+            totalFrequentRenterPoints += rental.getFrequentRenterPoints();
         }
-        return frequentRenterPoints;
+        return totalFrequentRenterPoints;
+    }
+
+    private double getTotalCost() {
+        double totalCost = 0;
+        Iterator<Rental> iterator = rentals.iterator();
+        while (iterator.hasNext()) {
+            Rental rental = iterator.next();
+            totalCost += rental.getCharge();
+        }
+        return totalCost;
     }
 
 }
