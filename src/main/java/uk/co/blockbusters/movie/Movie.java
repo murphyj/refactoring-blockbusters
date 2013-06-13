@@ -1,4 +1,4 @@
-package uk.co.blockbusters;
+package uk.co.blockbusters.movie;
 
 public class Movie {
 
