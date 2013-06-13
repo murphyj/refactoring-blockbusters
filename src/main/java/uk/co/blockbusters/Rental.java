@@ -1,6 +1,7 @@
 package uk.co.blockbusters;
 
 import uk.co.blockbusters.movie.Movie;
+import uk.co.blockbusters.movie.NewReleaseMovie;
 
 public class Rental {
 
@@ -27,5 +28,14 @@ public class Rental {
             rentalPrice += (getDaysRented() - getMovie().getInitialRentalLimit()) * getMovie().getRollingRentalCost();
         }
         return rentalPrice;
+    }
+
+    public int getFrequentRenterPoints() {
+        int frequentRenterPoints = 1;
+        if ((getMovie() instanceof NewReleaseMovie) &&
+                getDaysRented() > 1) {
+            frequentRenterPoints ++;
+        }
+        return frequentRenterPoints;
     }
 }
