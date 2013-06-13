@@ -8,7 +8,11 @@ public abstract class Movie {
         this.title = title;
     }
 
-    public abstract double getPriceCode();
+    public abstract double getRentalCost();
+
+    public abstract int getInitialRentalLimit();
+
+    public abstract double getRollingRentalCost();
 
     public String getTitle() {
         return title;

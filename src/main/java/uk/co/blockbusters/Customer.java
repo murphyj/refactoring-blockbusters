@@ -1,6 +1,6 @@
 package uk.co.blockbusters;
 
-import uk.co.blockbusters.movie.Movie;
+import uk.co.blockbusters.movie.NewReleaseMovie;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -36,7 +36,7 @@ public class Customer {
             // add frequent renter points
             frequentRenterPoints ++;
             // add bonus for a two day new release rental
-            if ((rental.getMovie().getPriceCode() == Movie.NEW_RELEASE) &&
+            if ((rental.getMovie() instanceof NewReleaseMovie) &&
                  rental.getDaysRented() > 1) {
                 frequentRenterPoints ++;
             }

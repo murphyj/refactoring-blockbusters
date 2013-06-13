@@ -6,7 +6,15 @@ public class RegularMovie extends Movie {
         super(title);
     }
 
-    public double getPriceCode() {
+    public double getRentalCost() {
+        return 2;
+    }
+
+    public double getRollingRentalCost() {
+        return 1.5;
+    }
+
+    public int getInitialRentalLimit() {
         return 2;
     }
 }
