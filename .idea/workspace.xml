@@ -2,30 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a648215a-1f5a-44c4-9aff-0c991cc13865" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blockbusters.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Rental.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Rental.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="videostore.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Movie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113665332" ignored="false" />
+    <file path="/Movie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371213822879" ignored="false" />
     <file path="/Rental.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113966815" ignored="false" />
     <file path="/Customer.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370553477390" ignored="false" />
     <file path="/pom.xml" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370242044580" ignored="false" />
-    <file path="/CustomerTest.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113693250" ignored="false" />
+    <file path="/CustomerTest.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371217099486" ignored="false" />
     <file path="/a.dummy" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1370290009932" ignored="false" />
     <file path="/fragment.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113295296" ignored="false" />
-    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371111257285" ignored="false" />
+    <file path="/Dummy.txt" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1374751999452" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/uk/co/blockbusters/movie/RegularMovie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113260893" ignored="false" />
     <file path="/RegularMovie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113674471" ignored="false" />
     <file path="/NewReleaseMovie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113681077" ignored="false" />
     <file path="/ChildrensMovie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371113656397" ignored="false" />
+    <file path="$PROJECT_DIR$/../refactoring-blockbusters-start/pom.xml" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371213517327" ignored="false" />
+    <file path="$PROJECT_DIR$/../refactoring-blockbusters-start/META-INF/application.xml" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371213623827" ignored="false" />
+    <file path="$PROJECT_DIR$/../refactoring-blockbusters-start/src/test/java/uk/co/blockbusters/CustomerTest.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371217138670" ignored="false" />
+    <file path="$PROJECT_DIR$/../refactoring-blockbusters-start/src/main/java/uk/co/blockbusters/Movie.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371213822879" ignored="false" />
+    <file path="$PROJECT_DIR$/../refactoring-blockbusters-start/src/main/java/uk/co/blockbusters/Rental.java" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371213828833" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../cbeebieshome/webapp/php/lib/BBC/Cbeebieshome/Contentitem/Clip.php" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371220591228" ignored="false" />
+    <file path="/Clip.php" changelist="a648215a-1f5a-44c4-9aff-0c991cc13865" time="1371220576524" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -82,7 +81,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -94,10 +93,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="CustomerTest.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="CustomerTest.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="174" column="3" selection-start="5807" selection-end="5807" vertical-scroll-proportion="0.5231214">
+                <state line="144" column="56" selection-start="4791" selection-end="4791" vertical-scroll-proportion="0.15039282">
                   <folding />
                 </state>
               </provider>
@@ -106,7 +105,7 @@
           <file leaf-file-name="ChildrenMovie.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/ChildrenMovie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="26" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+                <state line="16" column="26" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -115,7 +114,7 @@
           <file leaf-file-name="RegularMovie.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/RegularMovie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="22" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+                <state line="17" column="22" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -124,7 +123,7 @@
           <file leaf-file-name="NewReleaseMovie.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/NewReleaseMovie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+                <state line="18" column="21" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -137,25 +136,25 @@
           <file leaf-file-name="Customer.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Customer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="21" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
+                <state line="31" column="21" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Rental.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Rental.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Rental.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="98" selection-start="685" selection-end="685" vertical-scroll-proportion="0.32803467">
+                <state line="22" column="29" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/Movie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="23" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+                <state line="17" column="23" selection-start="361" selection-end="361" vertical-scroll-proportion="0.28207964">
                   <folding />
                 </state>
               </provider>
@@ -310,6 +309,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blockbusters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -373,14 +384,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -663,7 +678,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784185" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -672,7 +686,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -682,9 +695,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.78817207" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21182796" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -807,58 +822,58 @@
         <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.54744524" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="366" selection-end="366" vertical-scroll-proportion="0.18716578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/ChildrenMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/RegularMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/NewReleaseMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="3" selection-start="5807" selection-end="5807" vertical-scroll-proportion="0.5231214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="21" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
+        <state line="31" column="21" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="98" selection-start="685" selection-end="685" vertical-scroll-proportion="0.32803467">
+        <state line="22" column="29" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="301" selection-end="614" vertical-scroll-proportion="0.08417509">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="361" selection-end="361" vertical-scroll-proportion="0.28207964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/NewReleaseMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="21" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/RegularMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/blockbusters/movie/ChildrenMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/co/blockbusters/CustomerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="56" selection-start="4791" selection-end="4791" vertical-scroll-proportion="0.15039282">
           <folding />
         </state>
       </provider>
