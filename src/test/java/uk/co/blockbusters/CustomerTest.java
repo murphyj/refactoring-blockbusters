@@ -28,7 +28,6 @@ public class CustomerTest {
 
     private Rental starTrekTwoDays = new Rental(starTrek, 2);
 
-    private Map<String, HashMap<String, Object>> rentals;
     private HashMap<String, HashMap<String, Object>> godfatherOneDayRental;
     private HashMap<String, HashMap<String, Object>> godfatherThreeDayRental;
     private HashMap<String,HashMap<String,Object>> godfatherFourDayRental;
