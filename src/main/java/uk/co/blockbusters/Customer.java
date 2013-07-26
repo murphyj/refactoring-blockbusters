@@ -26,13 +26,13 @@ public class Customer {
         Iterator<Rental> rentals = this.rentals.iterator();
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasNext()) {
-            Rental each = (Rental) rentals.next();
-            frequentRenterPoints += each.getFrequentRenterPoints();
+            Rental rental = (Rental) rentals.next();
+            frequentRenterPoints += rental.getFrequentRenterPoints();
 
             //show figures for this rental
-            result += "\t" + each.getMovie().getTitle() + "\t" +
-                    String.valueOf(each.getCharge()) + "\n";
-            totalAmount += each.getCharge();
+            result += "\t" + rental.getMovie().getTitle() + "\t" +
+                    String.valueOf(rental.getCharge()) + "\n";
+            totalAmount += rental.getCharge();
         }
 
         // add footer lines
