@@ -28,7 +28,7 @@ public class Customer {
 
             //show figures for this rental
             result += "\t" + rental.getMovie().getTitle() + "\t" +
-                    String.valueOf(rental.getCharge()) + "\n";
+                    String.valueOf(rental.movie.getCharge(rental)) + "\n";
         }
 
         // add footer lines
@@ -53,7 +53,7 @@ public class Customer {
         Iterator<Rental> rentals = this.rentals.iterator();
         while (rentals.hasNext()) {
             Rental rental = rentals.next();
-            total += rental.getCharge();
+            total += rental.movie.getCharge(rental);
         }
         return total;
     }
