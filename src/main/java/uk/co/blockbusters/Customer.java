@@ -27,8 +27,7 @@ public class Customer {
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasNext()) {
             Rental each = (Rental) rentals.next();
-            frequentRenterPoints =
-                    each.getFrequentRenterPoints(frequentRenterPoints);
+            frequentRenterPoints += each.getFrequentRenterPoints();
 
             //show figures for this rental
             result += "\t" + each.getMovie().getTitle() + "\t" +
